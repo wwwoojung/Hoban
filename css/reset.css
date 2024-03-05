@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    white-space: nowrap;
+}
+
+strong,
+b {
+    font-weight: inherit;
+}
+
+i,
+em,
+address {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+body {
+    line-height: 1;
+    color: #202123;
+}
+
+button {
+    cursor: pointer;
+}
+
+p {
+    word-break: keep-all;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    overflow: hidden;
+}
+
+.skip {
+    position: relative;
+    z-index: 999;
+}
+
+.skip a {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    display: block;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+}
+
+.skip a:focus,
+.skip a:active {
+    top: 0;
+}
