@@ -273,35 +273,6 @@
                     </div>
                 </div>
             </section>
-            <section class="section default mainMap">
-                <div class="inner __animation">
-                    <h2>BRAND MAP</h2>
-                    <div id="localMap" class="localMap"></div>
-                    <script type="text/javascript"
-                        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ba10999a9ba24d06b1be31fb84788f46"></script>
-                    <script>
-                        var mapContainer = document.getElementById('localMap'), // 지도를 표시할 div 
-                            mapOption = {
-                                center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-                                level: 3 // 지도의 확대 레벨
-                            };
-
-                        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
-
-                        var iwContent = '<div class="info"><img src="./images/logo.png" alt="호반써밋"></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-                            iwPosition = new kakao.maps.LatLng(33.450701, 126.570667), //인포윈도우 표시 위치입니다
-                            iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
-
-                        // 인포윈도우를 생성하고 지도에 표시합니다
-                        var infowindow = new kakao.maps.InfoWindow({
-                            map: map, // 인포윈도우가 표시될 지도
-                            position: iwPosition,
-                            content: iwContent,
-                            removable: iwRemoveable
-                        });
-                    </script>
-                </div>
-            </section>
             <footer id="footer" class="footer section fp-auto-height">
                 <div class="inner">
                     <div class="img_box">
